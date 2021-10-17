@@ -31,7 +31,7 @@ html {
 .intro {
   padding-top: 9.6rem;
   margin-bottom: 9.6rem;
-  text-align: center;
+  text-align: left;
 }
 .intro__text h1 {
   font-size: 4.4rem;
@@ -42,7 +42,7 @@ html {
 }
 .intro__text p {
   font-size: 1.6rem;
-  padding: 0 1rem;
+  padding: 0;
   line-height: 1.7;
   margin-bottom: 3.2rem;
 }
@@ -129,7 +129,7 @@ html {
   font-weight: 700;
   letter-spacing: -1px;
   margin-bottom: 3.2rem;
-  text-align: center;
+  text-align: left;
 }
 .features__grid {
   display: grid;
@@ -187,7 +187,7 @@ html {
   font-weight: 700;
   letter-spacing: -1px;
   margin-bottom: 3.2rem;
-  text-align: center;
+  text-align: left;
 }
 .cards__grid {
   display: grid;
@@ -292,7 +292,7 @@ html {
   font-weight: 700;
   letter-spacing: -1px;
   margin-bottom: 3.2rem;
-  text-align: center;
+  text-align: left;
 }
 .testimonials__grid {
   display: grid;
