@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Custom Links -->
   <link rel="stylesheet" href="css/font-awesome.min.css">
-  <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
   <link rel="stylesheet" href="css/style.css">
 
   <title>Lisbon's Chairs</title>
@@ -20,11 +19,11 @@
         <div class="nav__wrapper">
           <div class="logo">Lisbon Chairs</div>
           <ul class="nav__links">
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Best selling</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Order now</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#best-selling">Best selling</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#order">Order now</a></li>
           </ul>
           <div class="burger-menu">
             <span class="line-1"></span>
@@ -38,7 +37,7 @@
     <!-- Intro Start -->
     <header class="intro">
       <div class="container">
-        <div class="grid grid--1--cols grid--2--cols">
+        <div class="intro__grid">
           <div class="intro__text">
             <h1>
               We design and build better chairs, for a better life
@@ -59,7 +58,7 @@
     </header>
     <!-- Intro End -->
     <!-- Features Start -->
-    <section class="features">
+    <section class="features" id="features">
       <div class="container">
         <h2>What makes our chairs special</h2>
         <div class="features__grid">
@@ -96,7 +95,7 @@
     </section>
     <!-- Features End -->
     <!-- Cards Start -->
-    <section class="cards">
+    <section class="cards" id="best-selling">
       <div class="container">
         <h2>Our bestselling chairs</h2>
         <div class="cards__grid">
@@ -243,7 +242,7 @@
     </section>
     <!-- Cards End -->
     <!-- Testimonials Start -->
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
       <div class="container">
         <h2>They said about us</h2>
         <div class="testimonials__grid">
@@ -260,12 +259,12 @@
           </div>
         </div>
       </div>
-      <div class="testimonials__arrow__left">
+      <!-- <div class="testimonials__arrow__left">
         <i class="fa fa-long-arrow-left"></i>
       </div>
       <div class="testimonials__arrow__right">
         <i class="fa fa-long-arrow-right"></i>
-      </div>
+      </div> -->
       <div class="testimonials__dots">
         <span class="active"></span>
         <span></span>
@@ -274,7 +273,7 @@
     </section>
     <!-- Testimonials End -->
     <!-- Gallery Start -->
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="container">
         <h2>We do have alot of chairs</h2>
         <div class="gallery__grid">
@@ -344,7 +343,7 @@
               </ul>
             </div>
           </div>
-          <div class="gallery__card">
+          <div class="gallery__card gallery__hidden">
             <img src="images/gallery/gallery-7.jpg" alt="">
             <div class="gallery__card__info">
               <ul>
@@ -355,7 +354,7 @@
               </ul>
             </div>
           </div>
-          <div class="gallery__card">
+          <div class="gallery__card gallery__hidden">
             <img src="images/gallery/gallery-8.jpg" alt="">
             <div class="gallery__card__info">
               <ul>
@@ -366,7 +365,7 @@
               </ul>
             </div>
           </div>
-          <div class="gallery__card">
+          <div class="gallery__card gallery__hidden">
             <img src="images/gallery/gallery-9.jpg" alt="">
             <div class="gallery__card__info">
               <ul>
@@ -379,13 +378,88 @@
           </div>
         </div>
       </div>
+      <button class="btn gallery__btn">Show More</button>
     </section>
     <!-- Gallery End -->
+    <!-- Call To Action Start -->
+    <div class="cta" id="order">
+      <div class="container">
+        <div class="cta__grid">
+          <div class="cta__text">
+            <h3>The best day to shop was one year ago,
+              The second best is today!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi porro fugiat aut eius nesciunt commodi.
+            </p>
+            <ul>
+              <li>
+                <i class="fa fa-check-circle"></i>
+                <span>shiping to all over the US</span>
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i>
+                <span>money back guarantee</span>
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i>
+                <span>many offers and discounts</span>
+              </li>
+            </ul>
+          </div>
+          <div class="cta__form">
+            <form>
+              <div class="form__group">
+                <input type="text" placeholder="Your email address" autocomplete="off" required>
+                <i class="fa fa-chevron-right"></i>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Call To Action End -->
   </main>
+  <!-- Footer Start -->
+  <footer>
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__info">
+          <h2 class="footer__header">Lisbon Chairs</h2>
+          <div class="copy__rights">
+            <p>Copyright &copy; 2021 by Jonas Shmedtmann</p>
+            <p>Re-designed by: <a href="https://mahmoud-elsayed.netlify.app/" target="_blank">Mahmoud
+                Elsayed</a></p>
+          </div>
+          </p>
+          <div class="footer__social__links">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__contact">
+          <h2 class="footer__header">Contact</h2>
+          <p>623 Harrison St, 2nd Floor, San Francisco, CA 94107</p>
+          <p>01032030635</p>
+          <p>mahmoudhamada3468@gmail.com</p>
+        </div>
+        <div class="footer__company">
+          <h2 class="footer__header">Company</h2>
+          <p>About Lisbon chairs</p>
+          <p>For business</p>
+          <p>Partners</p>
+        </div>
+        <div class="footer__account">
+          <h2 class="footer__header">Account</h2>
+          <p>Create account</p>
+          <p>Sign in</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-  <!-- <script src="js/jquery 3.4.1.js"></script> -->
-  <!-- <script src="js/bootstrap.js"></script> -->
   <script src="js/main.js"></script>
 </body>
 

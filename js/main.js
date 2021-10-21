@@ -2,14 +2,6 @@
 const burgerMenu = document.querySelector(".burger-menu");
 const navLinks = document.querySelector(".nav__links");
 const linkItems = document.querySelectorAll(".nav__links li");
-const links = document.querySelectorAll("a");
-
-// prevent the links from going to the top of the page
-links.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-  });
-});
 
 // stop the event bubbling
 navLinks.addEventListener("click", (e) => {
@@ -34,3 +26,12 @@ document.addEventListener("click", () => {
   burgerMenu.classList.remove("active-burger");
 });
 // ==================== //
+const galleryBtn = document.querySelector(".gallery__btn");
+const galleryImgs = document.querySelectorAll(".gallery__card");
+
+galleryBtn.addEventListener("click", function () {
+  galleryImgs.forEach((img) => {
+    img.classList.remove("gallery__hidden");
+  });
+  this.style.display = "none";
+});
